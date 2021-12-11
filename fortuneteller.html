@@ -1,0 +1,218 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="fortuneteller.css">
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+<!--WELCOME PAGE -->
+  <div id="Welcome Page">
+    <h1>WELCOME</h1>
+    <button type="button" id='start-button' onclick="return show('Elements','Welcome Page')">click here to find out your fortune</button> 
+  </div>
+    
+<!--WHAT ELEMENT ARE YOU PAGE -->
+  <div id="Elements" style="display:none">
+    <h2>Which element do you favor?</h2>  
+     <button type="button"id='back-button' onclick="return show('Welcome Page','Elements')"> Back</button> 
+     <!--FIRE -->
+     <img src="assets/fire.png"id='fire-image'alt="Missing Image">
+
+      <button type="button" id='fire-button' onclick="return show('Powers','Elements')">FIRE</button> 
+      <!--AIR -->
+     <img src="assets/air.png"id='air-image'alt="Missing Image">
+
+    <button type="button" id='air-button' onclick="return show('Powers','Elements')">AIR</button>
+
+       <!--EARTH -->
+     <img src="assets/earth.png"id='earth-image'alt="Missing Image">
+
+    <button type="button" id='earth-button' onclick="return show('Powers','Elements')">EARTH</button>  
+      <!--WATER -->
+     <img src="assets/water.png"id='water-image'alt="Missing Image">
+
+    <button type="button" id='water-button' onclick="return show('Powers','Elements')">WATER</button>
+
+  </div>
+<!--CHOOSE A SUPERPOWER -->
+    <div id="Powers" style="display:none">
+  <h3>If you could have a superpower 
+    <br/> which would you choose?</h2>  
+    <button type="button" id='back-button' onclick="return show('Elements','Powers')">Back</button> 
+
+      <!--FLY -->
+     <img src="assets/fly.png"id='fly-image'alt="Missing Image">
+     <button type="button" id='fly-button' onclick="return show('WouldYou1','Powers')">To Fly</button> 
+      <!--INVISIBLE -->
+     <img src="assets/invisable.png"id='invisable-image'alt="Missing Image">
+    <button type="button" id='invisable-button' onclick="return show('WouldYou2','Powers')">To Be Invisible</button>
+
+      <!--MINDS -->
+     <img src="assets/mind.png"id='mind-image'alt="Missing Image">
+    <button type="button" id='mind-button' onclick="return show('WouldYou3','Powers')">To Read Minds</button>  
+
+    <!--TELEPORT -->
+     <img src="assets/teleport.png"id='teleport-image'alt="Missing Image">
+    <button type="button" id='teleport-button' onclick="return show('WouldYou4','Powers')">To Teleport </button>
+
+  </div>
+<!--WOULD YOU RATHER 1- FLY -->
+     <div id="WouldYou1" style="display:none">
+      <h4>Would you rather have the ability to see 10 minutes
+    <br/> into the future or 150 years into the future?</h4>  
+    <button type="button" id='back-button' onclick="return show('Powers','WouldYou1')">Back</button>
+
+    <img src="assets/10min.png"id='min-image'alt="Missing Image">
+     <button type="button" id='op1-button' onclick="return show('Ready?1','WouldYou1')"> See 10 min into the future</button> 
+
+    <img src="assets/year.png"id='year-image'alt="Missing Image">
+    <button type="button" id='op2-button' onclick="return show('Ready?2','WouldYou1')">See 150 years into the future</button>
+ 
+  </div>
+
+  </div>
+<!--WOULD YOU RATHER 2- INVISIBLE -->
+     <div id="WouldYou2" style="display:none">
+      <h4> Would you rather team up with <br/> Wonder Woman or Captain Marvel?</h4>  
+    <button type="button" id='back-button' onclick="return show('Powers','WouldYou2')">Back</button> 
+
+    <img src="assets/dc.png"id='dc-image'alt="Missing Image">
+     <button type="button" id='op1-button' onclick="return show('Ready?3','WouldYou2')"> Wonder Woman</button> 
+
+     <img src="assets/marvel.png"id='marvel-image'alt="Missing Image">
+    <button type="button" id='op2-button' onclick="return show('Ready?4','WouldYou2')">Captain Marvel</button>
+ 
+  </div>
+
+   </div>
+<!--WOULD YOU RATHER 3- MIND -->
+     <div id="WouldYou3" style="display:none">
+      <h4> Would you rather be forced to sing along  <br/> or dance to every single song you hear?</h4>  
+    <button type="button" id='back-button' onclick="return show('Powers','WouldYou3')">Back</button> 
+
+    <img src="assets/sing.png"id='sing-image'alt="Missing Image">
+     <button type="button" id='op1-button' onclick="return show('Ready?5','WouldYou3')"> Sing Along</button> 
+
+    <img src="assets/dance.png"id='dance-image'alt="Missing Image">
+    <button type="button" id='op2-button' onclick="return show('Ready?6','WouldYou3')">Dance</button>
+ 
+  </div>
+
+     </div>
+<!--WOULD YOU RATHER 4- TELEPORT -->
+     <div id="WouldYou4" style="display:none">
+      <h4> Would you rather swim in a pool full of Nutella<br/> or a pool full of maple syrup?</h4>  
+    <button type="button" id='back-button' onclick="return show('Powers','WouldYou4')">Back</button> 
+
+        <img src="assets/nutella.png"id='nutella-image'alt="Missing Image">
+     <button type="button" id='op1-button' onclick="return show('Ready?7','WouldYou4')"> Pool of Nutella</button> 
+
+    <img src="assets/syrup.png"id='syrup-image'alt="Missing Image">
+    <button type="button" id='op2-button' onclick="return show('Ready?8','WouldYou4')">Pool of Maple Syrup</button>
+ 
+  </div>
+
+
+<!--FORTUNE 1  -->
+
+</div>
+<div id="Ready?1"style="display:none">
+    <h6>ARE YOU READY?</h6>
+    <button type="button" id='end-button' onclick="return show('Fortune1','Ready?1')">click here for your fortune</button> 
+  </div>
+
+    </div>
+     <div id="Fortune1" style="display:none">
+      <h5> run. </h5>  
+  </div>
+
+<!--FORTUNE 2  -->
+</div>
+<div id="Ready?2"style="display:none">
+    <h6>ARE YOU READY?</h6>
+    <button type="button" id='end-button' onclick="return show('Fortune2','Ready?2')">click here for your fortune</button> 
+  </div>
+
+</div>
+     <div id="Fortune2" style="display:none">
+      <h5> you will be hungry again in one hour </h5>  
+  </div>
+
+ <!--FORTUNE 3 -->
+ </div>
+<div id="Ready?3"style="display:none">
+    <h6>ARE YOU READY?</h6>
+    <button type="button" id='end-button' onclick="return show('Fortune3','Ready?3')">click here for your fortune</button> 
+  </div>
+
+</div>
+     <div id="Fortune3" style="display:none">
+      <h5> a new romance is in the future </h5>  
+  </div>
+
+ <!--FORTUNE 4 -->
+ </div>
+<div id="Ready?4"style="display:none">
+    <h6>ARE YOU READY?</h6>
+    <button type="button" id='end-button' onclick="return show('Fortune4','Ready?4')">click here for your fortune</button> 
+  </div>
+  </div>
+     <div id="Fortune4" style="display:none">
+      <h5> Beware of the blinding red light. If you see this light, you must flee. It will only bring you death! </h5>  
+  </div>
+
+ <!--FORTUNE 5 -->
+ </div>
+<div id="Ready?5"style="display:none">
+    <h6>ARE YOU READY?</h6>
+    <button type="button" id='end-button' onclick="return show('Fortune5','Ready?5')">click here for your fortune</button> 
+  </div>
+
+   </div>
+     <div id="Fortune5" style="display:none">
+      <h5> Do not trust your thoughts. They will hinder your victory. </h5>  
+  </div>
+
+ <!--FORTUNE 6 -->
+ </div>
+<div id="Ready?6"style="display:none">
+    <h6>ARE YOU READY?</h6>
+    <button type="button" id='end-button' onclick="return show('Fortune6','Ready?6')">click here for your fortune</button> 
+  </div>
+   </div>
+     <div id="Fortune6" style="display:none">
+      <h5> Any decision you have to make tomorrow is a good decision </h5>  
+  </div>
+
+   <!--FORTUNE 7 -->
+   </div>
+<div id="Ready?7"style="display:none">
+    <h6>ARE YOU READY?</h6>
+    <button type="button" id='end-button' onclick="return show('Fortune7','Ready?7')">click here for your fortune</button> 
+  </div>
+   </div>
+     <div id="Fortune7" style="display:none">
+      <h5> An acquaintance of the past will affect you in the near future </h5>  
+  </div>
+
+ <!--FORTUNE 8 -->
+ </div>
+<div id="Ready?8"style="display:none">
+    <h6>ARE YOU READY?</h6>
+    <button type="button" id='end-button' onclick="return show('Fortune8','Ready?8')">click here for your fortune</button> 
+  </div>
+
+   </div>
+     <div id="Fortune8" style="display:none">
+      <h5> All your hard work will soon pay off </h5>  
+  </div>
+    
+    
+    
+</body>
+</html>
